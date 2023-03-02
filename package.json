@@ -2,5 +2,27 @@
   "dependencies": {
     "@aws-sdk/client-ssm": "^3.282.0",
     "lodash": "^4.17.21"
-  }
+  },
+  "name": "treesecret",
+  "description": "for tree get aws system pamater store",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/david-marstree/treeSecret.git"
+  },
+  "keywords": [
+    "aws",
+    "ssm"
+  ],
+  "author": "David MARStree",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david-marstree/treeSecret/issues"
+  },
+  "homepage": "https://github.com/david-marstree/treeSecret#readme"
 }
