@@ -1,10 +1,9 @@
 {
     "name": "treesecret",
     "description": "for tree get aws system pamater store",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "main": "lib/cjs/index.js",
     "module": "lib/esm/index.js",
-    "type": "module",
     "types": "lib/esm/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
