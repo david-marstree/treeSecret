@@ -1,19 +1,11 @@
 {
     "name": "treesecret",
     "description": "for tree get aws system pamater store",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "lib/cjs/index.js",
     "module": "lib/esm/index.js",
+    "type": "module",
     "types": "lib/esm/index.d.ts",
-    "dependencies": {
-        "@aws-sdk/client-ssm": "^3.282.0",
-        "lodash": "^4.17.21"
-    },
-    "devDependencies": {
-        "@tsconfig/node-lts": "^18.12.4",
-        "@types/lodash": "^4.14.197",
-        "typescript": "^5.1.6"
-    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "tsc && tsc -p tsconfig-cjs.json"
@@ -31,5 +23,21 @@
     "bugs": {
         "url": "https://github.com/david-marstree/treeSecret/issues"
     },
-    "homepage": "https://github.com/david-marstree/treeSecret#readme"
+    "homepage": "https://github.com/david-marstree/treeSecret#readme",
+    "dependencies": {
+        "@aws-sdk/client-ssm": "^3.282.0",
+        "lodash": "^4.17.21"
+    },
+    "devDependencies": {
+        "@tsconfig/node-lts": "^18.12.4",
+        "@types/lodash": "^4.14.197",
+        "typescript": "^5.1.6"
+    },
+    "exports": {
+        ".": {
+            "import": "./lib/esm/index.js",
+            "require": "./lib/cjs/index.js"
+        },
+        "./package.json": "./package.json"
+    }
 }
